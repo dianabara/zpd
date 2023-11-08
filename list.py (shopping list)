@@ -1,0 +1,12 @@
+shopping_list = ['milk','avokado']
+shopping_list.extend(['maize','kartupeli','saldejums'])
+print(shopping_list)
+
+item_to_delete = input("Kuru elemntu gribi izdzēst?:")
+
+if 'avokado' in shopping_list:
+    shopping_list.remove('avokado') 
+else:
+    print(f"Could not find {item_to_delete} in your list")
+
+print(shopping_list)
